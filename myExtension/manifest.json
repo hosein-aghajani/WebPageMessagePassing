@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "msg-test",
+  "description": "message test",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*"
+  ],
+  "offline_enabled": true,
+  "externally_connectable": {
+     "matches": ["http://localhost:8081/ExternalWebPage.html"],
+	 "accept_tls_channel_id":true			 
+  }
+}
