@@ -1,7 +1,7 @@
 console.log("hey back");
 chrome.runtime.onConnectExternal.addListener(function(port){
   port.postMessage({greeting:"hey"});
-  port.onMessageExternal.addListener(function(message, sender){
+  port.onMessage.addListener(function(message, sender){
   if(message.greeting == "salam"){
     console.log("message from content: " + message.greeting);
 	port.postMessage({greeting:"H R U?"});
