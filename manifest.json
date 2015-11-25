@@ -16,8 +16,7 @@
   ],
   "offline_enabled": true,
   "externally_connectable": {
-     "ids":["*"],
-     "matches": ["file:///C:/Users/h.aghajani/Desktop/b.html"],
+     "matches": ["http://localhost:8081/myWeb.html"],
 	 "accept_tls_channel_id":true			 
   }
 }
