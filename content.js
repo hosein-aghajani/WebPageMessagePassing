@@ -1,16 +1,16 @@
-alert("hey content");
-var port = chrome.runtime.connect({name:"mycontentscript"});
+console.log("hey content");
+var port = chrome.runtime.connect("gojbkealfcnanhhicpaneffaecjfajfk", {name:"mycontentscript"});
 port.onMessage.addListener(function(message, sender){
   if(message.greeting == "hey"){
-    alert("message from background: " + message.greeting);
+    console.log("message from background: " + message.greeting);
 	port.postMessage({greeting:"salam"});
   }
   else if(message.greeting == "H R U?"){
-    alert("message from background: " + message.greeting);
+    console.log("message from background: " + message.greeting);
 	port.postMessage({greeting:"khobam"});
   }
   else{
-    alert("content did not receive hello");
+    console.log("content did not receive hello");
     port.postMessage({greeting:"no salam"});
   }
 });
