@@ -16,7 +16,7 @@
   ],
   "offline_enabled": true,
   "externally_connectable": {
-     "matches": ["http://localhost:8081/ExternalWebPage.html"],
+     "matches": ["http://localhost:8081/myPage.html"],
 	 "accept_tls_channel_id":true			 
   }
 }
